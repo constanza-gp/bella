@@ -20,13 +20,23 @@ body {
 font-family: 'Montserrat', sans-serif;
 background-color: #F8F8FF;
 
-}  
+}
 
-.texto{
-padding: 30px 250px 30px 250px;
-font-family: 'Montserrat', sans-serif;
-font-size: 16px;
-color: black;
+.nota section {
+
+}
+
+.video section {
+  
+}
+
+
+
+.texto {
+  padding: 30px 250px 30px 250px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: black;
 } 
 
 blockquote {
@@ -58,7 +68,7 @@ img {
 }
 
 section {
-  height: 100vh;
+  /* height: 100vh; */
   background-color: #F8F8FF;
 }
 
