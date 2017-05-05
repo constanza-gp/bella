@@ -30,8 +30,6 @@ background-color: #F8F8FF;
   
 }
 
-
-
 .texto {
   padding: 30px 250px 30px 250px;
   font-family: 'Montserrat', sans-serif;
@@ -51,7 +49,7 @@ blockquote {
 img {
     width: 100%;
     height: auto;
-    padding-bottom: 100px;
+    padding-bottom: 40px;
 }
 
 .head-img {
@@ -67,10 +65,11 @@ img {
   z-index: -1;
 }
 
+
 section {
-  /* height: 100vh; */
+ /* height: 100vh; */
   background-color: #F8F8FF;
-}
+} 
 
 .header {
   background-color: transparent;
