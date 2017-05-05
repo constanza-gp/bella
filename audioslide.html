@@ -177,7 +177,7 @@
                 var posicion = entrevista.prop('currentTime');
 
                 // Inicio haciendo click en el botón comenzar, para darle "Play" al audio. El slide se ejecuta vía Reveal.js, class="navigate-next"
-                $('#comenzar').on('click', function() {
+                $('#button_wrapper').on('click', function() {
                     entrevista.trigger('play');
 
                     // cambiar css de .controles 
