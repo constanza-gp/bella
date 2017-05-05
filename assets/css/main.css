@@ -6,7 +6,16 @@
  * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
 
-@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Nixie+One');
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Oswald');
+
+body {
+
+  
+}
 
 .reveal .slide-aligned-left {
   text-align: center;
