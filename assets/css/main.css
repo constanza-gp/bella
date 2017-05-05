@@ -10,13 +10,22 @@
 
 html, body {
   height: 100%;
-  font-size: 14px;
+  font-size: 16px;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Quattrocento');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body {
-  font-family: 'Quattrocento', 'Helvetica Neue', Helvetica, Arial, _sans;
+font-family: 'Montserrat', sans-serif;
+background-color: #F8F8FF;
+
+}  
+
+.texto{
+padding: 30px 250px 30px 250px;
+font-family: 'Montserrat', sans-serif;
+font-size: 16px;
+color: black;
 }
 
 .head-img {
@@ -34,7 +43,7 @@ body {
 
 section {
   height: 100vh;
-  background-color: white;
+  background-color: #F8F8FF;
 }
 
 .header {
