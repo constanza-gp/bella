@@ -27,7 +27,15 @@ background-color: #F8F8FF;
 }
 
 .video section {
-  
+
+} 
+
+section iframe{
+display: block;
+text-align: center;
+margin: 0 auto; 
+position: relative;
+
 }
 
 .texto {
