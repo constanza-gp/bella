@@ -8,14 +8,39 @@
 
 
 
+html, body {
+  height: 100%;
+  font-size: 14px;
+}
 
-
-@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Oswald');
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Quattrocento');
 
 body {
-
-  
+  font-family: 'Quattrocento', 'Helvetica Neue', Helvetica, Arial, _sans;
 }
+
+.head-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  min-height: 100%;
+  min-width: 1024px;
+
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+section {
+  height: 100vh;
+  background-color: white;
+}
+
+.header {
+  background-color: transparent;
+}
+
 
 .reveal .slide-aligned-left {
   text-align: center;
@@ -33,7 +58,7 @@ body {
   height: 50px;
   opacity: 1;
   background: rgba(255,255,255,0);
-  text-align: center; 
+  text-align: center;
   border-radius: 5px;
 }
 
@@ -49,11 +74,11 @@ body {
 }
 
 .controles a:hover {
-  color:  rgba(255, 255, 255, 0.5); 
+  color:  rgba(255, 255, 255, 0.5);
 }
 
 .controles .play, .controles .pausa {
-  color:  rgba(255, 255, 255, 1.0); 
+  color:  rgba(255, 255, 255, 1.0);
 }
 
 .controles .esconder {
@@ -69,7 +94,7 @@ audio {
 
 a#comenzar:hover{
 
-  background-color: grey; 
+  background-color: grey;
   color: white;
 
 }
@@ -79,7 +104,7 @@ a#comenzar:hover{
   color:  #EC7063 ;
   letter-spacing: -1.0em;
   text-align: left;
-  line-height: 1.055em !important; 
+  line-height: 1.055em !important;
   }
 
 /*********************************************
@@ -107,9 +132,9 @@ body {
 /** opacidad a la foto de inicio +*/
 
   .slide-aligned-left {
-    opacity: 0.5; 
+    opacity: 0.5;
 
-  } 
+  }
 
 
 /*********************************************
@@ -140,13 +165,13 @@ body {
 
 .reveal h2 {
   font-size: 2.11em;
-  line-height: 1.8em; 
+  line-height: 1.8em;
   color: black;
 }
 
 .intro {
   font-family: "Open Sans", sans-serif;
-  color: white; 
+  color: white;
   text-shadow: 4px 4px #000000;
 }
 
