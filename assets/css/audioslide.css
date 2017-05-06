@@ -61,19 +61,12 @@ audio {
 
 }
 
-a#comenzar:hover{
-
-  background-color: grey; 
-  color: white;
-
-}
-
 
 #button_wrapper button {
 
   text-align: center;
   /**object-position: bottom;**/
-  background-color:#C70039; 
+  background-color:#6d6d6d; 
   border: none;
   color: black;
   padding: 15px 32px;
@@ -83,9 +76,17 @@ a#comenzar:hover{
   cursor: pointer;
   float: center;
   border-radius: 12px;
-  font-family: Oswald, sans-serif;
+  font-family: 'Open Sans bold', sans-serif;
+  font-size:20px;
+  color: white;
   
 }
+
+#button_wrapper button: hover {
+  
+   background-color: #4CAF50; /* Green */
+    color: white;
+}  
 
 /**
 #button_wrapper: hover {
