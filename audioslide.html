@@ -32,9 +32,13 @@
             <audio id="entrevista">
               <source src="assets/audios/prestamista-bronx.mp3" type="audio/mpeg">
             </audio>
-            <div class="controles">
-                <a href="#" class="play">&#9654;</a><a href="#" class="pausa">&#9724;</a>   
+            <div class="controles" id="controles" style="display:none">
+                <a href="#" class="play" id="play">&#9654;</a><a href="#" class="pausa" id="pausa">&#9724;</a> 
             </div>
+            <div id="button_wrapper">
+                        <button>Comenzar</button>
+            </div>
+
         </div>
 
         <div class="reveal">
@@ -43,10 +47,8 @@
                     <h1> Vivir como prestamista <br> en el Bronx</h1>
                     <p class="intro">“Ivelisse García vive de los interes que gana al prestar dinero <br> a los latinos que están fuera de la banca.”</p>
                 </section>
-                        <div id="button_wrapper">
-                        <button>Comenzar</button>
-                        </div>
-
+                        
+                
 <!--
             <div class="button_wrapper">
 
@@ -162,13 +164,14 @@
 
         <script src="assets/js/head.min.js"></script>
         <script src="assets/js/reveal.js"></script>
+        
         <script>
 
             $(document).ready(function() {
 
                 // Array para guardar el tiempo en el momento que cambiamos cada slide.
                 // Cada valor en el array esta expresado en segundos acumulados PONER NUMERITOS.
-                var tiempoTransicion = [20, 40, 60, 203, 403];
+                var tiempoTransicion = [5, 40, 60, 203, 403];
 
 
                 // Posición del array tiempoTransicion
@@ -187,11 +190,15 @@
                     // cambiar css de .controles 
                 });
 
-                $('.play a').on('click', function() {
-                    entrevista.trigger('play');
+                $('#play').on('click', function() {
+
+                        entrevista.trigger('play');
+
                 });
 
-                $('.pausa a').on('click', function() {
+                $('#pausa').on('click', function() {
+
+
                     entrevista.trigger('pause');
                 });
 
@@ -213,7 +220,16 @@
 
                 // Función para ejecutar siguiende slide.
                 function cambiarSlide() {
-                    Reveal.next();
+                    Reveal.next(); 
+                    if (marcaActual==0)
+                    
+                    {document.getElementById("controles").style.display = "block";
+                    document.getElementById("button_wrapper").style.display = "none";
+
+                    }
+
+
+
                     marcaActual += 1;
                 }
 

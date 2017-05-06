@@ -28,6 +28,7 @@
   background: rgba(255,255,255,0);
   text-align: center; 
   border-radius: 5px;
+  object-position: bottom;
 }
 
 .controles a {
@@ -71,7 +72,7 @@ a#comenzar:hover{
 #button_wrapper button {
 
   text-align: center;
-  object-position: bottom;
+  /**object-position: bottom;**/
   background-color:#C70039; 
   border: none;
   color: black;
@@ -83,6 +84,7 @@ a#comenzar:hover{
   float: center;
   border-radius: 12px;
   font-family: Oswald, sans-serif;
+  
 }
 
 /**
