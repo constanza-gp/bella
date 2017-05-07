@@ -49,19 +49,35 @@ background-color: #F8F8FF;
 
 }
 
-h1{
-font-family: 'Circular', sans-serif;
+.titulo {
+font-family: 'Circular';
 font-size: 50px;
-
-}
-
-.nota section {
-
-}
-
-.video section {
+font-style: normal;
+font-weight: 800;
+color: white;
 
 } 
+
+.byline {
+font-family: "Circular";
+font-style: normal;
+font-weight: 200;
+color: white;
+}
+
+.head-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+ 
+  min-height: 100%;
+  min-width: 1024px;
+
+  width: 100%;
+  height: auto;
+  z-index: -1;
+} 
+
 
 section iframe{
 display: block;
@@ -93,14 +109,6 @@ img {
     padding-bottom: 40px;
 }
 
-.head-img {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  z-index: -1;
-} 
 
 .menu{ 
 position: absolute; 
@@ -115,16 +123,19 @@ nav ul {
 
 
 
-.header h1{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 50px;
-}
 section {
  /* height: 100vh; */
   background-color: #F8F8FF;
+
 } 
 
+.nota section {
 
+}
+
+.video section {
+
+} 
 
 
 
