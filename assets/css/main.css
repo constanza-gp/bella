@@ -35,6 +35,8 @@ src:url('fonts/circular-bold.woff2') format('woff2'),
     url('fonts/circular-bold.woff') format('woff');
 }
 
+@fa-font-path:   "../font";
+
 html, body {
 
   height: 100%;
@@ -51,11 +53,10 @@ background-color: #F8F8FF;
 
 .titulo {
 font-family: 'Circular';
-font-size: 50px;
 font-style: normal;
 font-weight: 800;
 color: white;
-padding: 100px 50px 100px 60px;
+padding: 50px 50px 100px 60px;
 font-size: 55px;
 
 } 
@@ -97,25 +98,44 @@ padding: 0px 50px 10px 60px;
 
 
 section iframe{
-display: block;
-text-align: center;
-margin: 0 auto; 
-position: relative;
+ display: block;
+    width: 960px;
+    height: 540px;
+  text-align: center;
+  margin: 0 auto;
+  /* margin-top: -30px; */
+  position: relative; 
+
 
 }
 
 .texto {
-  padding: 30px 300px 30px 300px;
+  padding: 30px 340px 30px 340px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  font-size: 1em;
   color: black;
+  line-height: 20px;
+
 }  
 
 h3 {
   font-family: "Circular";
 font-style: normal;
 font-weight: 200;
-font-size: 18px;
+font-size: 1.5em;
+font-style: italic;
+line-height: 1.5em; 
+margin-top: 0px;
+margin-bottom: 30px;
+ /* border-top-style: solid; 
+border-bottom-style: solid;
+border-width: medium;
+margin-bottom: 50px;
+padding-top: 50px;
+padding-bottom: 50px;
+line-height: 25px; 
+*/ 
+}
 
  /*
   background-color: #cf2626;
@@ -126,7 +146,7 @@ font-size: 18px;
   padding: 0.5em 10px;
 
   */
-}
+
 
 
 
@@ -152,13 +172,14 @@ blockquote {
     font-family: "Circular";
    font-style: normal;
     font-weight: 600;
+    line-height: 40px;
 } 
 
 
 
 .cita1{
-  float: right;
-  
+  position: relative;
+    left: -20px;
 }
 
 img {
@@ -167,11 +188,16 @@ img {
     padding-bottom: 20px;
 }
 
+header {
+  position: relative;
+}
 
 .menu{ 
 position: absolute; 
-top: 5px; 
-margin-left: 1080px;
+top: 0px; 
+right: 0px;
+text-align: right;
+
 } 
 
 nav ul {
@@ -186,11 +212,16 @@ font-weight: 200;
 /* unvisited link */
 a:link {
     color: #F8F8FF;
+     text-decoration: none;
 }
 
 /* visited link */
 a:visited {
     color: #F8F8FF;}
+
+a:hover {
+  text-decoration: underline;
+}
 
 
   .foot-img {
@@ -205,17 +236,70 @@ a:visited {
 
 section {
  /* height: 100vh; */
-  background-color: #F8F8FF;
-
+  background-color: white;
 } 
+.video-header {
+  position: relative;
+  height: 80vh;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+
+}
+
+.icono {
+    text-align: center;
+} 
+
+.svg { 
+width: 180px;
+height: 210px;
+
+ }
+
 
 .nota section {
 
 }
 
-.video section {
+/*video */ 
+
+h1 { 
+  font-family: 'Circular';
+font-size: 50px;
+font-style: normal;
+font-weight: 800;
+color: black;
+padding: 30px 100px 0px 100px;
+font-size: 55px; 
+ 
 
 } 
+
+.videosub{ 
+  font-family: "Circular";
+font-style: normal;
+font-weight: 200;
+font-size: 20px;
+font-style: italic;
+border-bottom-style: solid;
+border-width: medium;
+margin-bottom: 50px;
+line-height: 25px;
+padding-left: 100px;
+padding-right: 130px;
+padding-bottom: 50px;
+
+
+ } 
+
+ 
 
 
 
