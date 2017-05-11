@@ -51,23 +51,79 @@ background-color: #F8F8FF;
 
 }
 
+/* CLASS DE HEADLINE PASADO 
+
 .titulo {
 font-family: 'Circular';
 font-style: normal;
 font-weight: 800;
 color: white;
 padding: 50px 50px 100px 60px;
-font-size: 55px;
+font-size: 55px;margin: 20px 0 20px 0;
+} */
 
-} 
 
-.byline {
+
+h1 {
+  font-size: 4.5em;
+  padding: 50px 50px 100px 60px;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+h1:nth-child(1) a {
+  color: #fff;
+  font-family: "Circular";
+font-style: normal;
+font-weight: 200;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+/* h1:nth-child(1) a:hover {
+  color: #FF1177;
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}  */
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 
+    0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 
+    0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+  }
+}
+
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 
+    0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 
+    0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+  }
+}
+
+
+h2 {
 font-family: "Circular";
 font-style: normal;
 font-weight: 200;
 color: white;
-size: 20px;
-padding: 0px 50px 10px 60px;
+font-size: 1em;
+padding: 0px 50px 10px 100px;
 
 }
 
@@ -218,10 +274,10 @@ a:link {
 /* visited link */
 a:visited {
     color: #F8F8FF;}
-
+/*
 a:hover {
   text-decoration: underline;
-}
+} */
 
 
   .foot-img {
@@ -270,9 +326,8 @@ height: 210px;
 
 /*video */ 
 
-h1 { 
+.video h1 { 
   font-family: 'Circular';
-font-size: 50px;
 font-style: normal;
 font-weight: 800;
 color: black;
