@@ -4,7 +4,9 @@
  *
  * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
  * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
- */
+ */ 
+
+ /* TIPO DE FONT PARA LOS TITULOS */ 
 
 @font-face{
 font-family: "Circular";
@@ -40,16 +42,13 @@ src:url('fonts/circular-bold.woff2') format('woff2'),
 html, body {
 
   height: 100%;
-  font-size: 16px;
+  font-size: 16px; 
+  font-family: 'Montserrat', sans-serif;
+
 }
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-body {
-font-family: 'Montserrat', sans-serif;
-background-color: #F8F8FF;
-
-}
 
 /* CLASS DE HEADLINE PASADO 
 
@@ -65,9 +64,11 @@ font-size: 55px;margin: 20px 0 20px 0;
 
 
 h1 {
-  font-size: 4.5em;
-  padding: 50px 50px 100px 60px;
+  font-size: 3.5em;
+  padding: 50px 50px 0px 60px;
   text-transform: uppercase;
+  text-align: center;
+
 }
 
 a {
@@ -75,17 +76,45 @@ a {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
-}
+} 
+
+
 
 h1:nth-child(1) a {
   color: #fff;
   font-family: "Circular";
 font-style: normal;
 font-weight: 200;
-  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
-  animation: neon1 1.5s ease-in-out infinite alternate;
+  -webkit-animation: neon4 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon4 1.5s ease-in-out infinite alternate;
+  animation: neon4 1.5s ease-in-out infinite alternate;
+}  
+
+/* BYLINE */ 
+h2 {
+font-family: "Circular";
+font-style: normal;
+font-weight: 200;
+color: white;
+font-size: 1em;
+position: absolute;
+margin:  -10px 10px 10px 430px;
+
 }
+
+/* ESTO ES LA BAJADA */ 
+
+h3 {
+  font-family: "Circular";
+font-style: normal;
+font-weight: 200;
+font-size: 1em;
+font-style: italic;
+line-height: 1.5em; 
+margin-top: 0px;
+margin-bottom: 30px;
+}
+
 
 /* h1:nth-child(1) a:hover {
   color: #FF1177;
@@ -93,6 +122,9 @@ font-weight: 200;
   -moz-animation: none;
   animation: none;
 }  */
+
+
+ /* COLOR ROSA NEON 
 
 @-webkit-keyframes neon1 {
   from {
@@ -114,18 +146,37 @@ font-weight: 200;
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 
     0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
   }
+}   */
+
+/* COLOR VERDE NEON */ 
+
+@-webkit-keyframes neon4 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #B6FF00, 0 0 70px #B6FF00, 0 0 80px #B6FF00, 0 0 100px #B6FF00, 0 0 150px #B6FF00;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #B6FF00, 0 0 35px #B6FF00, 0 0 40px #B6FF00, 0 0 50px #B6FF00, 0 0 75px #B6FF00;
+  }
 }
 
-
-h2 {
-font-family: "Circular";
-font-style: normal;
-font-weight: 200;
-color: white;
-font-size: 1em;
-padding: 0px 50px 10px 100px;
-
+@-moz-keyframes neon4 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #B6FF00, 0 0 70px #B6FF00, 0 0 80px #B6FF00, 0 0 100px #B6FF00, 0 0 150px #B6FF00;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #B6FF00, 0 0 35px #B6FF00, 0 0 40px #B6FF00, 0 0 50px #B6FF00, 0 0 75px #B6FF00;
+  }
 }
+
+@keyframes neon4 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #B6FF00, 0 0 70px #B6FF00, 0 0 80px #B6FF00, 0 0 100px #B6FF00, 0 0 150px #B6FF00;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #B6FF00, 0 0 35px #B6FF00, 0 0 40px #B6FF00, 0 0 50px #B6FF00, 0 0 75px #B6FF00;
+  }
+}
+
 
 /*
 .head-img {
@@ -153,18 +204,6 @@ padding: 0px 50px 10px 100px;
 
 
 
-section iframe{
- display: block;
-    width: 960px;
-    height: 540px;
-  text-align: center;
-  margin: 0 auto;
-  /* margin-top: -30px; */
-  position: relative; 
-
-
-}
-
 .texto {
   padding: 30px 340px 30px 340px;
   font-family: 'Montserrat', sans-serif;
@@ -174,16 +213,9 @@ section iframe{
 
 }  
 
-h3 {
-  font-family: "Circular";
-font-style: normal;
-font-weight: 200;
-font-size: 1.5em;
-font-style: italic;
-line-height: 1.5em; 
-margin-top: 0px;
-margin-bottom: 30px;
- /* border-top-style: solid; 
+
+ /* ESTO ES PARA PONER UN BORDE PARA LAS CIBRAS ***** 
+border-top-style: solid; 
 border-bottom-style: solid;
 border-width: medium;
 margin-bottom: 50px;
@@ -191,17 +223,6 @@ padding-top: 50px;
 padding-bottom: 50px;
 line-height: 25px; 
 */ 
-}
-
- /*
-  background-color: #cf2626;
-  padding: 0px 300px 0px 300px;
-  background: #e37c7d;
-  border-left: 10px solid #ccc;
-  margin: 0px 0px 0px 400px;
-  padding: 0.5em 10px;
-
-  */
 
 
 
@@ -218,6 +239,11 @@ color: #cf2626;
 }
 
 
+
+
+
+/* BLOCKQUOTE PARA LAS CITAS CON ICONO */
+ /*
 blockquote {
     display: block; 
     margin-top: 1em;
@@ -229,20 +255,73 @@ blockquote {
    font-style: normal;
     font-weight: 600;
     line-height: 40px;
+} */
+
+.cita1 {
+     position: relative;
+     right: 100px;
+    display: block; 
+    /*
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 5px;
+    margin-right: 5px; 
+    */ 
+    padding: 0px 50px 0px 50px;
+    font-size: 30px;
+    font-family: "Circular";
+   font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+
+}
+
+.svg { 
+
+width: 180px;
+height: 210px;
+margin-bottom: -30px;
 } 
 
+  /*TRATE DE QUE EL ICONO DEL MALETIN BRILLARA, PERO NO FUNCIONO */ 
 
-
-.cita1{
-  position: relative;
-    left: -20px;
-}
 
 img {
     width: 100%;
     height: auto;
     padding-bottom: 20px;
-}
+} 
+
+.foto-filtro img:hover {
+-webkit-filter: invert(30%);
+-webkit-filter: saturate(1.5);
+}  
+
+.audiogram-bella { 
+ position: relative;
+float: right;
+margin: 0px -190px 0px 10px;
+
+ } 
+ /* FALTA QUE EL AUDIOGRAM NO TENGA TANTO ESPACIO DE TOP/BOTTOM */ 
+
+ .controls { 
+  position: relative;
+
+  }
+
+
+/*Filter styles que podemos usar y jugar 
+.saturate {-webkit-filter: saturate(3);}
+.grayscale {-webkit-filter: grayscale(100%);}
+.contrast {-webkit-filter: contrast(160%);}
+.brightness {-webkit-filter: brightness(0.25);}
+.blur {-webkit-filter: blur(3px);}
+.invert {-webkit-filter: invert(100%);}
+.sepia {-webkit-filter: sepia(100%);}
+.huerotate {-webkit-filter: hue-rotate(180deg);}
+.opacity {-webkit-filter: opacity(50%);} 
+*/
 
 header {
   position: relative;
@@ -280,16 +359,6 @@ a:hover {
 } */
 
 
-  .foot-img {
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  background-size: cover;
-  width: 100%;
-  height: auto;
-}
-
-
 section {
  /* height: 100vh; */
   background-color: white;
@@ -313,16 +382,37 @@ section {
     text-align: center;
 } 
 
-.svg { 
-width: 180px;
-height: 210px;
+ 
+
+.svg:nth-child(1) a {
+  color: #fff;
+  font-family: "Circular";
+font-style: normal;
+font-weight: 200;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+} 
+
+footer{ 
+background-color: black;
+height: 180px; 
 
  }
 
+ .menu-footer {
+  font-size: 1.5em;
+  padding-top: 20px;
+ } 
 
-.nota section {
+ .legend {
+ position: relative;
+  float: left;
+  margin: 10px 50px 10px -180px;
+ } 
 
-}
+ /* NO SE COMO MOVER EL MARGEN DEL TEXTO PARA QUE ESTE MAS CERCA DEL VIDEO */ 
+
 
 /*video */ 
 
@@ -353,6 +443,18 @@ padding-bottom: 50px;
 
 
  } 
+
+ section iframe {
+ display: block;
+    width: 960px;
+    height: 540px;
+  text-align: center;
+  margin: 0 auto;
+  /* margin-top: -30px; */
+  position: relative; 
+
+
+}
 
  
 
