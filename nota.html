@@ -1,3 +1,17 @@
+<!-- FALTA POR ARREGLAR: 
+-FOTOS PEQUES DENTRO DEL TEXTO 
+-CENTRAR Y HACER QUE BRILLE EL SVG CON CITA 
+-BAJADA Y BYLINE NO ESTAN CENTRADAS NI EN BLANCO ....ALGO FALTA EN EL CODIGO QUE NO ME HE DADO CUENTA 
+-AGREGAR FOTO DE MENDOZA Y DE ANGEL EL VENDEDOR AMBULANTE (SI ES NECESARIO...)
+-PONER PIE DE FOTOS A TODAS 
+-PONER CALCULADORA/BOT 
+-CAMBIAR ALGUNA CITAS GRANDES POR CIFRAS? MAYBE 
+-NO PUDE CAMBIAR EL TAMANO DEL TITULO PRINCIPAL 
+*****ORDENE EL CSS LO MEJOR QUE PUDE, PERO IGUAL Y FALTA ALGO Y POR ESO NO SE ESTAN CAMBIANDO CIERTAS COSAS EN PG ********
+
+-->
+
+
 <!doctype html>
 <html class="no-js" lang="es">
 <!--
@@ -32,7 +46,7 @@ Acá ponemos Meta tags. Los metatags son textos que los visitantes de tu sitio n
 <meta name="description" content="Aquí va la descripción de la página o sitio web">
 <meta property="og:site_name" content="Reportaje final de Craft 2 en Español"/>
 <meta property="og:title" content="Los Préstamos en la sombra">
-<meta property="og:longTitle" content="Los Préstamos en la sombra: cultura de barrio">
+<meta property="og:longTitle" content="Préstamos en la sombra: usura, dinero y sueños">
 <meta property="og:image" content="Incluir link a imagen principal de la historia "/>
 <meta property="og:description" content="Las comunidades latinas crean alternativas financieras, como prestamistas de barrio, por no tener acceso a bancos. Aunque tener efectivo rápido sea un beneficio para ciertas personas, los altos intereses, deudas y falta de historial crediticio son posibles consecuencias."/>
 <meta property="og:url" content="AGREGAR LA URL DE LA PÁGINA"/>
@@ -56,43 +70,38 @@ Acá ponemos Meta tags. Los metatags son textos que los visitantes de tu sitio n
 
     </ul>      
   </nav>
+ <div class="video-header">
+
+<h1><a href="">Préstamos en la sombra: <br> usura, dinero y sueños</a></h1>
+<p class="bajada">Los prestamistas operan en un mercado ambiguo de necesidad y usura. Este negocio se alimenta de la misma banca tradicional que ignora a las comunidades de inmigrantes de bajos ingresos, urgidas de acceso rápido a efectivo. Su lado oscuro: es la intimidación que ejerce al que no paga.</p> 
+<p class="byline">Por Monica Cordero, Constanza Gallardo y Alma Sacasa</p> -->  
+
+<img class="head-img" src="assets/images/foto20.JPG">  <!--  ME GUSTA MAS ESTA FOTO --><!-- <img class="head-img" src="assets/images/header2.jpg">  OTRA OPCION DE HEADER --> 
+
+  <!-- <video class="video" muted=”muted” preload="yes" autoplay="autoplay" loop="loop">
+  <source src="assets/videos/loans.MOV" type="video/MOV">
+  <source src="assets/videos/loans.MOV" type="video/ogg">
+</video> -->
+</div> 
 </header>
-<!-- este es mi texto -->
-<div class="video-header">
-  <!--  <img class="head-img" src="assets/images/header.jpg"> -->
-<h1><a href="">Los préstamos en la sombra: <br> cultura de barrio  </a></h1>
-<h2>Por Monica Cordero, Constanza Gallardo y Alma Sacasa</h2>  
-
-  
- <video class="video" muted=”muted” preload="yes" autoplay="autoplay" loop="loop">
-  <source src="assets/videos/dinero.mp4" type="video/mp4">
-  <source src="assets/videos/dinero.mp4" type="video/ogg">
-</video> 
-</div>
-
 
 
 
     <!-- agregar sección de redes sociales para estar dentro de esta sección -->
 
 
-
+<!-- este es mi texto -->
 <section class="texto">
 
-<h3>Los prestamistas operan en un mercado ambiguo de necesidad y usura. Este negocio se alimenta de la misma banca tradicional que ignora a las comunidades de inmigrantes de bajos ingresos, urgidas de acceso rápido a efectivo. Su lado oscuro: es la intimidación que ejerce al que no paga.</h3> 
 
 
-<!-- ESTE ES EL ICONO DE BILLETE MEDIANO ** VER CUAL SE VE MEJOR DE TAMANO **  -->
+
+<!-- ESTE ES EL ICONO DE BILLETE  ** VER CUAL SE VE MEJOR DE TAMANO ** SE QUEDA SI PONEMOS LA BAJADA EN ELTEXTO
+
 <div class="icono">
 <script src="https://use.fontawesome.com/7bfe0a9bf3.js"></script>
 <i class="fa fa-money fa-3x" aria-hidden="true"></i>
-</div> 
-
-<!-- ESTE ES EL ICONO DE BILLETE GRANDE  -->
-   <div class="icono">
-    <script src="https://use.fontawesome.com/7bfe0a9bf3.js"></script>
-    <i class="fa fa-money fa-5x" aria-hidden="true"></i> 
-    </div>
+</div>  -->
 
 
 
@@ -127,11 +136,8 @@ Acá ponemos Meta tags. Los metatags son textos que los visitantes de tu sitio n
 
 
    <div class="cita1">
-   <blockquote>
-   <a href="">
-   <img class="svg" src="assets/images/bolsa.svg" alt="bolsa"/></a>
+   <a href=""> <img class="svg" src="assets/images/bolsa.svg" alt="bolsa"/> </a>
    <p>"Sería imposible para ellos  subsistir (sin los prestamistas)," dijo Reeder.<p>
-   </blockquote>
    </div>
 
    <p>Dennis Reeder, director de Washington Heights e Inwood Development Corporation (WHIDC), explicó que las comunidades de inmigrantes encuentran difícil ahorrar dinero para levantar un negocio debido a sus características socio económicas.</p>
@@ -144,8 +150,8 @@ Acá ponemos Meta tags. Los metatags son textos que los visitantes de tu sitio n
   <!-- ESTE ES EL ICONO DE BILLETE GRANDE  -->
    <div class="icono">
     <script src="https://use.fontawesome.com/7bfe0a9bf3.js"></script>
-    <i class="fa fa-money fa-5x" aria-hidden="true"></i> 
-    </div>
+    <i class="fa fa-money fa-3x" aria-hidden="true"></i> 
+    </div> 
     
 
     <!-- <div class="subtitulo"> Asunto de confianza</div> -->
@@ -167,9 +173,12 @@ Acá ponemos Meta tags. Los metatags son textos que los visitantes de tu sitio n
 
     </section>
 
-    <section>
+    <section> 
     <div class="foto-filtro">
-      <img src="assets/images/foto9.JPG"></div>
+      <img src="assets/images/foto8.JPG" style="float: left; width: 30%; margin-right: 1%; margin-bottom: 0.5em;">
+      <img src="assets/images/foto9.JPG" style="float: left; width: 30%; margin-right: 1%; margin-bottom: 0.5em;">
+      <img src="assets/images/foto7.JPG" style="float: left; width: 30%; margin-right: 1%; margin-bottom: 0.5em;">
+      </div>
     </section>
 
 <section class="texto"> 
@@ -177,10 +186,10 @@ Acá ponemos Meta tags. Los metatags son textos que los visitantes de tu sitio n
     <p> La otra razón es que no hacen negocio con cualquiera. Eligen a clientes que conocen o que son recomendados por gente de confianza.</p> 
 
 
-    <blockquote> “Todo está basado en fe y una apretada de manos”, dijo Dennis Reeder.</blockquote>
+   <p> La peluquera María Ramos ha tenido relación con siete prestamistas durante sus 30 años. Han sido dominicanos y cubanos.</p>  <div class="cita1">
 
-
-    <p> La peluquera María Ramos ha tenido relación con siete prestamistas durante sus 30 años. Han sido dominicanos y cubanos.</p>
+   <a href=""> <img class="svg" src="assets/images/bolsa.svg" alt="bolsa"/> </a>
+   <p>“Todo está basado en fe y una apretada de manos”, dijo Dennis Reeder.</p></div>
 
     <p>Llegó a ellos referida por amigos. Su historial de crédito en la banca informal depende no solo de que pague a tiempo, sino de que tan buenos clientes sean sus recomendados. Dos de sus prestamistas cortaron relación con ella por conocidos que quedaron mal.</p>
 
@@ -229,7 +238,10 @@ Acá ponemos Meta tags. Los metatags son textos que los visitantes de tu sitio n
  
     <p>Los clientes de los prestamistas aceptan pagar intereses altos porque no tienen otra opción, pero también porque muchos inmigrantes no tienen en sus países de origen una relación con el sistema financiero.</p>
  
-    <blockquote>“Muchos de ellos (inmigrantes) vienen de países donde su dinero está más seguro debajo del colchón que en un banco”, dijo Dennis Reeder.</blockquote>
+    <div class="cita1">
+   <a href=""> <img class="svg" src="assets/images/bolsa.svg" alt="bolsa"/> </a>
+   <p>“Muchos de ellos (inmigrantes) vienen de países donde su dinero está más seguro debajo del colchón que en un banco”, dijo Dennis Reeder.</p> </div>
+
  
     <p>Seis de cada 10 familias pobres en América Latina está fuera del sistema financiero, según datos del Banco Mundial del 2015. Se trata de una población con poco acceso a Internet y bajo nivel educativo.</p>
  
@@ -246,11 +258,14 @@ Acá ponemos Meta tags. Los metatags son textos que los visitantes de tu sitio n
 </section>
 
 
-
-<section>
-<div class="foto-filtro">
-      <img src="assets/images/maria1.jpg"> </div>
-</section>
+<!-- arreglar tamaños de fotos y centrar --> 
+<section> 
+    <div class="foto-filtro">
+      <img src="assets/images/ramos5.JPG" style="float: left; width: 30%; margin-right: 1%; margin-bottom: 0.5em;">
+      <img src="assets/images/ramos2.JPG" style="float: left; width: 30%; margin-right: 1%; margin-bottom: 0.5em;">
+      <img src="assets/images/ramos4.JPG" style="float: left; width: 30%; margin-right: 1%; margin-bottom: 0.5em;">
+      </div>
+    </section>
 
 
 
