@@ -39,36 +39,26 @@ src:url('fonts/circular-bold.woff2') format('woff2'),
 
 @fa-font-path:   "../font";
 
+/*
 html, body {
 
   height: 100%;
   font-size: 16px; 
   font-family: 'Montserrat', sans-serif;
 
-}
+} */
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 
-/* CLASS DE HEADLINE PASADO 
-
-.titulo {
-font-family: 'Circular';
-font-style: normal;
-font-weight: 800;
-color: white;
-padding: 50px 50px 100px 60px;
-font-size: 55px;margin: 20px 0 20px 0;
-} */
-
+/* HEADER */
 
 
 h1 {
-  font-size: 3.5em;
-  padding: 50px 50px 0px 60px;
+  font-size: 5em;
+  padding: 20px 50px 0px 60px;
   text-transform: uppercase;
   text-align: center;
-
 }
 
 a {
@@ -90,119 +80,86 @@ font-weight: 200;
   animation: neon4 1.5s ease-in-out infinite alternate;
 }  
 
-/* BYLINE */ 
+/* LA BAJADA */ 
 h2 {
 font-family: "Circular";
 font-style: normal;
 font-weight: 200;
 color: white;
 font-size: 1em;
-position: absolute;
-margin:  -10px 10px 10px 430px;
+position: relative;
+margin: 0px 260px 10px 260px;
 
 }
 
-/* ESTO ES LA BAJADA */ 
 
+/* BYLINE */ 
 h3 {
-  font-family: "Circular";
+font-family: "Circular";
 font-style: normal;
 font-weight: 200;
 font-size: 1em;
 font-style: italic;
 line-height: 1.5em; 
-margin-top: 0px;
-margin-bottom: 30px;
+color: white; 
+margin: 0px 430px 0px 400px;
 }
 
-
-/* h1:nth-child(1) a:hover {
-  color: #FF1177;
-  -webkit-animation: none;
-  -moz-animation: none;
-  animation: none;
-}  */
-
-
- /* COLOR ROSA NEON 
-
-@-webkit-keyframes neon1 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 
-    0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 
-    0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
-  }
-}
-
-@keyframes neon1 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 
-    0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 
-    0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
-  }
-}   */
-
-/* COLOR VERDE NEON */ 
 
 @-webkit-keyframes neon4 {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #B6FF00, 0 0 70px #B6FF00, 0 0 80px #B6FF00, 0 0 100px #B6FF00, 0 0 150px #B6FF00;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 
+    0 0 40px #B6FF00, 0 0 70px #B6FF00, 0 0 80px #B6FF00, 0 0 100px #B6FF00, 0 0 150px #B6FF00;
   }
   to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #B6FF00, 0 0 35px #B6FF00, 0 0 40px #B6FF00, 0 0 50px #B6FF00, 0 0 75px #B6FF00;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 
+    0 0 20px #B6FF00, 0 0 35px #B6FF00, 0 0 40px #B6FF00, 0 0 50px #B6FF00, 0 0 75px #B6FF00;
   }
 }
 
 @-moz-keyframes neon4 {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #B6FF00, 0 0 70px #B6FF00, 0 0 80px #B6FF00, 0 0 100px #B6FF00, 0 0 150px #B6FF00;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 
+    0 0 40px #B6FF00, 0 0 70px #B6FF00, 0 0 80px #B6FF00, 0 0 100px #B6FF00, 0 0 150px #B6FF00;
   }
   to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #B6FF00, 0 0 35px #B6FF00, 0 0 40px #B6FF00, 0 0 50px #B6FF00, 0 0 75px #B6FF00;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 
+    0 0 20px #B6FF00, 0 0 35px #B6FF00, 0 0 40px #B6FF00, 0 0 50px #B6FF00, 0 0 75px #B6FF00;
   }
 }
 
 @keyframes neon4 {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #B6FF00, 0 0 70px #B6FF00, 0 0 80px #B6FF00, 0 0 100px #B6FF00, 0 0 150px #B6FF00;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 
+    0 0 40px #B6FF00, 0 0 70px #B6FF00, 0 0 80px #B6FF00, 0 0 100px #B6FF00, 0 0 150px #B6FF00;
   }
   to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #B6FF00, 0 0 35px #B6FF00, 0 0 40px #B6FF00, 0 0 50px #B6FF00, 0 0 75px #B6FF00;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #B6FF00, 
+    0 0 35px #B6FF00, 0 0 40px #B6FF00, 0 0 50px #B6FF00, 0 0 75px #B6FF00;
   }
 }
 
+section {
+  background-color: white;
+} 
 
-/*
-.head-img {
-  position: fixed;
-  top: 0;
-  left: 0;
-  /* min-height: 100%; 
-  min-width: 1024px;
-  background-size: cover;
-  width: 100%;
-  height: 700px;
-  z-index: -1;
-}  */
+.headertop{
+  position: relative;
+  height: 80vh;
+}
 
 .head-img { 
-  background-image: url('../images/header-bronx.JPG');
   position: fixed;
   left: 0;
   background-size: cover;
   width: 100%;
   height: auto;
- z-index: -1;
- top: 0;
+   z-index: -1;
+  top: 0;
 }
 
 
+/* CUERPO DEL TEXTO CON ELEMENTOS */ 
 
 .texto {
   padding: 30px 340px 30px 340px;
@@ -212,20 +169,6 @@ margin-bottom: 30px;
   line-height: 20px;
 
 }  
-
-
- /* ESTO ES PARA PONER UN BORDE PARA LAS CIBRAS ***** 
-border-top-style: solid; 
-border-bottom-style: solid;
-border-width: medium;
-margin-bottom: 50px;
-padding-top: 50px;
-padding-bottom: 50px;
-line-height: 25px; 
-*/ 
-
-
-
 
 .subtitulo {
 font-family: "Circular";
@@ -237,79 +180,58 @@ padding-bottom: 10px;
 color: #cf2626;
 
 }
-
-
-
-
-
-/* BLOCKQUOTE PARA LAS CITAS CON ICONO */
- /*
-blockquote {
-    display: block; 
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 5px;
-    margin-right: 5px;
-    font-size: 30px;
-    font-family: "Circular";
-   font-style: normal;
-    font-weight: 600;
-    line-height: 40px;
-} */
-
+ 
+/* DIV DE CITAS */ 
 .cita1 {
-     position: relative;
-     right: 100px;
-    display: block; 
-    /*
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 5px;
-    margin-right: 5px; 
-    */ 
-    padding: 0px 50px 0px 50px;
-    font-size: 30px;
-    font-family: "Circular";
-   font-style: normal;
-    font-weight: 600;
-    line-height: 40px;
-
+   
+   font-family: sans-serif;
+   font-size: 2em;
+   line-height: 1.2em;
+   font-weight: bold;
+   position: relative;
+   float: right;
+   margin: 0px -200px 0px 30px;  
+   text-align: center;  
 }
 
 .svg { 
 
 width: 180px;
 height: 210px;
-margin-bottom: -30px;
-} 
+margin-left: 5px;
+margin-bottom: -90px;
+}  
 
   /*TRATE DE QUE EL ICONO DEL MALETIN BRILLARA, PERO NO FUNCIONO */ 
+
+.svg img:hover {
+  -webkit-animation: neon4 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon4 1.5s ease-in-out infinite alternate;
+  animation: neon4 1.5s ease-in-out infinite alternate;
+}
+
+
+ /* FOTOS CON CAPTIONS Y FILTROS    */ 
 
 
 img {
     width: 100%;
     height: auto;
     padding-bottom: 20px;
-} 
+}  
+
+/* FALTA DARLE ESTILO QUE FUNCIONE A LOS CAPTIONS */ 
+figcaption {
+  padding: 0px 10px 0px 20px;
+  display: block;
+  font-size: 0.8em;
+  
+}
 
 .foto-filtro img:hover {
 -webkit-filter: invert(30%);
 -webkit-filter: saturate(1.5);
 }  
-
-.audiogram-bella { 
- position: relative;
-float: right;
-margin: 0px -190px 0px 10px;
-
- } 
- /* FALTA QUE EL AUDIOGRAM NO TENGA TANTO ESPACIO DE TOP/BOTTOM */ 
-
- .controls { 
-  position: relative;
-
-  }
-
 
 /*Filter styles que podemos usar y jugar 
 .saturate {-webkit-filter: saturate(3);}
@@ -323,76 +245,43 @@ margin: 0px -190px 0px 10px;
 .opacity {-webkit-filter: opacity(50%);} 
 */
 
-header {
+/* AUDIOGRAM  */ 
+
+.audiogram-bella { 
+ position: relative;
+float: left;
+
+margin: 0px 15px 0px -290px;
+
+ } 
+
+.controls { 
   position: relative;
-}
-
-.menu{ 
-position: absolute; 
-top: 0px; 
-right: 0px;
-text-align: right;
-
-} 
-
-nav ul {
-  list-style: none;
-  margin: 0 auto;
-  color: #F8F8FF;
-  font-family: "Circular";
-font-style: normal;
-font-weight: 200;
-
-}
-/* unvisited link */
-a:link {
-    color: #F8F8FF;
-     text-decoration: none;
-}
-
-/* visited link */
-a:visited {
-    color: #F8F8FF;}
-/*
-a:hover {
-  text-decoration: underline;
-} */
+  
+  }
 
 
-section {
- /* height: 100vh; */
-  background-color: white;
-} 
-.video-header {
-  position: relative;
-  height: 80vh;
-}
 
-.video {
-  position: absolute;
-  top: 0;
-  background-size: cover;
-  width: 100%;
-  height: auto;
-  z-index: -1;
 
-}
+/* BILLETE */ 
 
 .icono {
     text-align: center;
 } 
 
- 
 
-.svg:nth-child(1) a {
-  color: #fff;
-  font-family: "Circular";
-font-style: normal;
-font-weight: 200;
-  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
-  animation: neon1 1.5s ease-in-out infinite alternate;
-} 
+
+/* VIDEO DE LEGEND */ 
+
+ .legend {
+ position: relative;
+ float: left;
+margin: 10px 50px 10px -180px;
+ } 
+
+
+ 
+/* FOOTER */ 
 
 footer{ 
 background-color: black;
@@ -405,16 +294,21 @@ height: 180px;
   padding-top: 20px;
  } 
 
- .legend {
- position: relative;
-  float: left;
-  margin: 10px 50px 10px -180px;
- } 
+/* unvisited link */
+a:link {
+    color: #F8F8FF;
+     text-decoration: none;
+}
 
- /* NO SE COMO MOVER EL MARGEN DEL TEXTO PARA QUE ESTE MAS CERCA DEL VIDEO */ 
+/* visited link */
+a:visited {
+    color: #F8F8FF;} 
 
 
-/*video */ 
+
+
+
+/*video.html*/ 
 
 .video h1 { 
   font-family: 'Circular';
@@ -454,7 +348,69 @@ padding-bottom: 50px;
   position: relative; 
 
 
+} 
+
+
+
+/* ESTO ES PARA PONER UN BORDE PARA LAS CIBRAS ***** 
+border-top-style: solid; 
+border-bottom-style: solid;
+border-width: medium;
+margin-bottom: 50px;
+padding-top: 50px;
+padding-bottom: 50px;
+line-height: 25px; 
+*/ 
+
+
+/* BLOCKQUOTE PARA LAS CITAS CON ICONO */
+ /*
+blockquote {
+    display: block; 
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 30px;
+    font-family: "Circular";
+   font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+} */
+
+/* h1:nth-child(1) a:hover {
+  color: #FF1177;
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}  */
+
+
+ /* COLOR ROSA NEON 
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 
+    0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 
+    0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+  }
 }
+
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 
+    0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 
+    0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+  }
+}   */
+
+/* COLOR VERDE NEON */ 
 
  
 
