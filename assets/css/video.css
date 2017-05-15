@@ -1,0 +1,156 @@
+/*video.html*/ 
+@import url('https://fonts.googleapis.com/css?family=Lato|PT+Sans|Roboto:700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+@font-face{
+font-family: "Circular";
+font-style: normal;
+font-weight: 200;
+src:url('fonts/circular-light.woff2') format('woff2'),
+    url('fonts/circular-light.woff') format('woff');
+}
+@font-face{
+font-family: "Circular";
+font-style: normal;
+font-weight: 400;
+src:url('fonts/circular-book.woff2') format('woff2'),
+    url('fonts/circular-book.woff') format('woff');
+}
+@font-face{
+font-family: "Circular";
+font-style: normal;
+font-weight: 600;
+src:url('fonts/circular-medium.woff2') format('woff2'),
+    url('fonts/circular-medium.woff') format('woff');
+}
+@font-face{
+font-family: "Circular";
+font-style: normal;
+font-weight: 800;
+src:url('fonts/circular-bold.woff2') format('woff2'),
+    url('fonts/circular-bold.woff') format('woff');
+}
+
+
+
+h1 {
+  font-size: 4em;
+  padding: 20px 50px 0px 60px;
+  text-transform: uppercase;
+  text-align: center; 
+  background-color: black;
+  height: 60vh; 
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+} 
+
+
+
+h1:nth-child(1) a {
+  color: #fff;
+  font-family: "Circular";
+font-style: normal;
+font-weight: 200;
+  -webkit-animation: neon4 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon4 1.5s ease-in-out infinite alternate;
+  animation: neon4 1.5s ease-in-out infinite alternate;
+}  
+
+@-webkit-keyframes neon4 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 
+    0 0 40px #B6FF00, 0 0 70px #B6FF00, 0 0 80px #B6FF00, 0 0 100px #B6FF00, 0 0 150px #B6FF00;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 
+    0 0 20px #B6FF00, 0 0 35px #B6FF00, 0 0 40px #B6FF00, 0 0 50px #B6FF00, 0 0 75px #B6FF00;
+  }
+}
+
+@-moz-keyframes neon4 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 
+    0 0 40px #B6FF00, 0 0 70px #B6FF00, 0 0 80px #B6FF00, 0 0 100px #B6FF00, 0 0 150px #B6FF00;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 
+    0 0 20px #B6FF00, 0 0 35px #B6FF00, 0 0 40px #B6FF00, 0 0 50px #B6FF00, 0 0 75px #B6FF00;
+  }
+}
+
+@keyframes neon4 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 
+    0 0 40px #B6FF00, 0 0 70px #B6FF00, 0 0 80px #B6FF00, 0 0 100px #B6FF00, 0 0 150px #B6FF00;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #B6FF00, 
+    0 0 35px #B6FF00, 0 0 40px #B6FF00, 0 0 50px #B6FF00, 0 0 75px #B6FF00;
+  }
+}
+
+
+h2 { 
+  font-family: "Circular";
+font-style: normal;
+font-weight: 200;
+font-size: 20px;
+font-style: italic;
+border-bottom-style: solid;
+border-width: medium;
+margin-bottom: 50px;
+line-height: 25px;
+padding-left: 100px;
+padding-right: 130px;
+padding-bottom: 50px;
+
+
+ } 
+
+ section iframe {
+ display: block;
+    width: 960px;
+    height: 540px;
+  text-align: center;
+  margin: 0 auto;
+  /* margin-top: -30px; */
+  position: relative; 
+
+
+} 
+
+.texto {
+  padding: 30px 340px 30px 340px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  color: black;
+  line-height: 20px;
+
+}  
+
+footer{ 
+background-color: black;
+height: 180px; 
+
+ }
+
+ .menu-footer {
+  font-size: 1.5em;
+  padding-top: 20px;
+ } 
+
+ /* unvisited link */
+a:link {
+    color: #F8F8FF;
+     text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #F8F8FF;} 

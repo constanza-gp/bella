@@ -48,6 +48,8 @@ html, body {
 
 } */
 
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|PT+Sans|Roboto:400,700');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 
@@ -62,6 +64,7 @@ h1 {
 }
 
 a {
+
   text-decoration: none;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -72,38 +75,34 @@ a {
 
 h1:nth-child(1) a {
   color: #fff;
-  font-family: "Circular";
-font-style: normal;
-font-weight: 200;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 200;
   -webkit-animation: neon4 1.5s ease-in-out infinite alternate;
   -moz-animation: neon4 1.5s ease-in-out infinite alternate;
   animation: neon4 1.5s ease-in-out infinite alternate;
 }  
 
 /* LA BAJADA */ 
-h2 {
-font-family: "Circular";
-font-style: normal;
-font-weight: 200;
-color: white;
+.bajada {
+font-family: 'Lato', sans-serif;
+font-weight: 400;
+font-style: italic;
 font-size: 1em;
-position: relative;
-margin: 0px 260px 10px 260px;
+margin-bottom: 50px;
 
 }
 
 
-/* BYLINE */ 
+/* BYLINE 
 h3 {
-font-family: "Circular";
-font-style: normal;
-font-weight: 200;
+  font-weight: 200;
+font-family: 'Lato', sans-serif;
 font-size: 1em;
-font-style: italic;
 line-height: 1.5em; 
 color: white; 
 margin: 0px 430px 0px 400px;
-}
+}*/ 
 
 
 @-webkit-keyframes neon4 {
@@ -163,11 +162,11 @@ section {
 
 .texto {
   padding: 30px 340px 30px 340px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1em;
   color: black;
   line-height: 20px;
-
+  
 }  
 
 .subtitulo {
@@ -186,25 +185,45 @@ color: #cf2626;
    
    font-family: sans-serif;
    font-size: 2em;
-   line-height: 1.2em;
+   line-height: 1em;
    font-weight: bold;
    position: relative;
    float: right;
    margin: 0px -200px 0px 30px;  
-   text-align: center;  
+   text-align: center; /* centrado o no? */ 
+} 
+
+.cita2 {
+font-family: sans-serif;
+   font-size: 2em;
+   line-height: 1em;
+   font-weight: bold;
+   position: relative;
+   float: left;
+   margin: 0px 30px 0px -280px;  
+   text-align: center; 
+
 }
 
 .svg { 
-
 width: 180px;
 height: 210px;
 margin-left: 5px;
 margin-bottom: -90px;
+
 }  
 
-  /*TRATE DE QUE EL ICONO DEL MALETIN BRILLARA, PERO NO FUNCIONO */ 
+  /*TRATE DE QUE EL ICONO DEL MALETIN BRILLARA, PERO NO SE VE BIEN */ 
 
-.svg img:hover {
+div.cita1 :hover {
+  -webkit-animation: neon4 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon4 1.5s ease-in-out infinite alternate;
+  animation: neon4 1.5s ease-in-out infinite alternate;
+} 
+
+/* NO FUNCIONO EL HOVER EN EL MALETIN */ 
+
+div.svg :hover {
   -webkit-animation: neon4 1.5s ease-in-out infinite alternate;
   -moz-animation: neon4 1.5s ease-in-out infinite alternate;
   animation: neon4 1.5s ease-in-out infinite alternate;
@@ -221,10 +240,12 @@ img {
 }  
 
 /* FALTA DARLE ESTILO QUE FUNCIONE A LOS CAPTIONS */ 
+
 figcaption {
   padding: 0px 10px 0px 20px;
   display: block;
   font-size: 0.8em;
+  font-family: 'Roboto', sans-serif;
   
 }
 
@@ -294,9 +315,9 @@ height: 180px;
   padding-top: 20px;
  } 
 
-/* unvisited link */
+/* unvisited link --- NO FUNCIONO EL COLOR?!?!? */
 a:link {
-    color: #F8F8FF;
+    color: ##AEFF14;
      text-decoration: none;
 }
 
@@ -308,47 +329,6 @@ a:visited {
 
 
 
-/*video.html*/ 
-
-.video h1 { 
-  font-family: 'Circular';
-font-style: normal;
-font-weight: 800;
-color: black;
-padding: 30px 100px 0px 100px;
-font-size: 55px; 
- 
-
-} 
-
-.videosub{ 
-  font-family: "Circular";
-font-style: normal;
-font-weight: 200;
-font-size: 20px;
-font-style: italic;
-border-bottom-style: solid;
-border-width: medium;
-margin-bottom: 50px;
-line-height: 25px;
-padding-left: 100px;
-padding-right: 130px;
-padding-bottom: 50px;
-
-
- } 
-
- section iframe {
- display: block;
-    width: 960px;
-    height: 540px;
-  text-align: center;
-  margin: 0 auto;
-  /* margin-top: -30px; */
-  position: relative; 
-
-
-} 
 
 
 
