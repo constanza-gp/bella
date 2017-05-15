@@ -6,36 +6,6 @@
  * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */ 
 
- /* TIPO DE FONT PARA LOS TITULOS */ 
-
-@font-face{
-font-family: "Circular";
-font-style: normal;
-font-weight: 200;
-src:url('fonts/circular-light.woff2') format('woff2'),
-    url('fonts/circular-light.woff') format('woff');
-}
-@font-face{
-font-family: "Circular";
-font-style: normal;
-font-weight: 400;
-src:url('fonts/circular-book.woff2') format('woff2'),
-    url('fonts/circular-book.woff') format('woff');
-}
-@font-face{
-font-family: "Circular";
-font-style: normal;
-font-weight: 600;
-src:url('fonts/circular-medium.woff2') format('woff2'),
-    url('fonts/circular-medium.woff') format('woff');
-}
-@font-face{
-font-family: "Circular";
-font-style: normal;
-font-weight: 800;
-src:url('fonts/circular-bold.woff2') format('woff2'),
-    url('fonts/circular-bold.woff') format('woff');
-}
 
 @fa-font-path:   "../font";
 
@@ -48,7 +18,7 @@ html, body {
 
 } */
 
-
+@import url('https://fonts.googleapis.com/css?family=Muli:400,600|Playfair+Display:400,700');
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|PT+Sans|Roboto:400,700');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
@@ -63,24 +33,25 @@ h1 {
   text-align: center;
 }
 
-a {
 
+a {
+  
   text-decoration: none;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
-  transition: all 0.5s;
+  transition: all 0.5s; 
 } 
 
 
 
 h1:nth-child(1) a {
   color: #fff;
-  font-family: 'Lato', sans-serif;
+  
   font-style: normal;
   font-weight: 200;
-  -webkit-animation: neon4 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon4 1.5s ease-in-out infinite alternate;
-  animation: neon4 1.5s ease-in-out infinite alternate;
+  -webkit-animation: neon4 0.5s ease-in-out infinite alternate;
+  -moz-animation: neon4 0.5s ease-in-out infinite alternate;
+  animation: neon4 0.5s ease-in-out infinite alternate;
 }  
 
 /* LA BAJADA */ 
@@ -125,7 +96,7 @@ margin: 0px 430px 0px 400px;
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 
     0 0 20px #B6FF00, 0 0 35px #B6FF00, 0 0 40px #B6FF00, 0 0 50px #B6FF00, 0 0 75px #B6FF00;
   }
-}
+} 
 
 @keyframes neon4 {
   from {
@@ -153,9 +124,13 @@ section {
   background-size: cover;
   width: 100%;
   height: auto;
-   z-index: -1;
+  z-index: -1;
   top: 0;
-}
+} 
+
+.pie { 
+clear: both;
+ }
 
 
 /* CUERPO DEL TEXTO CON ELEMENTOS */ 
@@ -169,6 +144,7 @@ section {
   
 }  
 
+/*
 .subtitulo {
 font-family: "Circular";
 font-style: normal;
@@ -178,13 +154,13 @@ padding-top: 40px;
 padding-bottom: 10px;
 color: #cf2626;
 
-}
+} */
  
 /* DIV DE CITAS */ 
 .cita1 {
    
    font-family: sans-serif;
-   font-size: 2em;
+   font-size: 1.8em;
    line-height: 1em;
    font-weight: bold;
    position: relative;
@@ -193,6 +169,8 @@ color: #cf2626;
    text-align: center; /* centrado o no? */ 
 } 
 
+
+/*
 .cita2 {
 font-family: sans-serif;
    font-size: 2em;
@@ -203,23 +181,24 @@ font-family: sans-serif;
    margin: 0px 30px 0px -280px;  
    text-align: center; 
 
-}
+} */ 
 
 .svg { 
 width: 180px;
 height: 210px;
 margin-left: 5px;
 margin-bottom: -90px;
+color: #AEFF14;
 
 }  
 
-  /*TRATE DE QUE EL ICONO DEL MALETIN BRILLARA, PERO NO SE VE BIEN */ 
+  /*TRATE DE QUE EL ICONO DEL MALETIN BRILLARA, PERO NO SE VE BIEN 
 
 div.cita1 :hover {
   -webkit-animation: neon4 1.5s ease-in-out infinite alternate;
   -moz-animation: neon4 1.5s ease-in-out infinite alternate;
   animation: neon4 1.5s ease-in-out infinite alternate;
-} 
+} */ 
 
 /* NO FUNCIONO EL HOVER EN EL MALETIN */ 
 
@@ -243,8 +222,10 @@ img {
 
 figcaption {
   padding: 0px 10px 0px 20px;
+  top: -10px;
   display: block;
   font-size: 0.8em;
+  position: relative;
   font-family: 'Roboto', sans-serif;
   
 }
@@ -253,6 +234,7 @@ figcaption {
 -webkit-filter: invert(30%);
 -webkit-filter: saturate(1.5);
 }  
+
 
 /*Filter styles que podemos usar y jugar 
 .saturate {-webkit-filter: saturate(3);}
@@ -270,9 +252,8 @@ figcaption {
 
 .audiogram-bella { 
  position: relative;
-float: left;
-
-margin: 0px 15px 0px -290px;
+float: right;
+margin: 0px -100px 0px 10px;
 
  } 
 
@@ -288,6 +269,7 @@ margin: 0px 15px 0px -290px;
 
 .icono {
     text-align: center;
+
 } 
 
 
@@ -313,21 +295,100 @@ height: 180px;
  .menu-footer {
   font-size: 1.5em;
   padding-top: 20px;
- } 
+  color: white; 
+
+ }  
+
+ nav ul{ 
+list-style: none;
+color: white;
+  }
 
 /* unvisited link --- NO FUNCIONO EL COLOR?!?!? */
 a:link {
-    color: ##AEFF14;
+    color: #AEFF14;
      text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-    color: #F8F8FF;} 
+    color: color: #AEFF14;}  
+
+
+/* BLOCKQUOTES CON CIFRAS */
+
+.quote .numero {
+  display: block;
+  font-size: 6em;
+  padding: 55px 0 65px 0;
+  font-family: sans-serif;
+  color: #AEFF14;
+} 
+
+.quote-left {
+  float: left; 
+  margin-left: -180px;
+  margin-right: 30px;  
+  margin-bottom: 20px;
+  font-family: sans-serif;
+   font-size: 1.8em;
+   line-height: 1.2em;
+   font-weight: bold;
+   text-align: center;
+}  
+
+
+  
+ 
+
+/*ARREGLAR ESTO PARA QUE BRILLE 
+.quote .numero  a {
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  -webkit-animation: neon4 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon4 1.5s ease-in-out infinite alternate;
+  animation: neon4 1.5s ease-in-out infinite alternate;
+} 
+
+*/
 
 
 
 
+
+
+/* TIPO DE FONT PARA LOS TITULOS */ 
+
+@font-face{
+font-family: "Circular";
+font-style: normal;
+font-weight: 200;
+src:url('fonts/circular-light.woff2') format('woff2'),
+    url('fonts/circular-light.woff') format('woff');
+}
+@font-face{
+font-family: "Circular";
+font-style: normal;
+font-weight: 400;
+src:url('fonts/circular-book.woff2') format('woff2'),
+    url('fonts/circular-book.woff') format('woff');
+}
+@font-face{
+font-family: "Circular";
+font-style: normal;
+font-weight: 600;
+src:url('fonts/circular-medium.woff2') format('woff2'),
+    url('fonts/circular-medium.woff') format('woff');
+}
+@font-face{
+font-family: "Circular";
+font-style: normal;
+font-weight: 800;
+src:url('fonts/circular-bold.woff2') format('woff2'),
+    url('fonts/circular-bold.woff') format('woff');
+}
 
 
 
