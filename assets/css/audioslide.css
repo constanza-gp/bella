@@ -8,7 +8,9 @@
 
 
 
-@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Nixie+One');
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|PT+Sans|Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 .reveal .slide-aligned-left {
   text-align: center;
@@ -31,9 +33,10 @@
   object-position: bottom;
 }
 
+
 .controles a {
   display: block;
-  font-size: 30px;
+  font-size: 2em;
   text-decoration: none;
   width: 50px;
   height: 38px;
@@ -69,13 +72,17 @@ audio {
   width: 175px;
   border-radius: 15px;
   opacity: 0.55;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 200;
   font-size: 20px;
-  font-family: Quattrocento;
-  font-weight: bold;
-  color: black;
   text-align: center; 
   cursor: pointer;
 
+
+
+  color: #fff;
+  
 }
 
 #button_wrapper button:hover {
@@ -95,7 +102,8 @@ outline:0;
 
 .reveal h1 {
   font-family: 'Lato', sans-serif;
-  font-weight: 700;
+  font-weight: 200;
+  font-size: 20px;
   color:  #EC7063 ;
   letter-spacing: -1.0em;
   text-align: left;
@@ -267,13 +275,16 @@ body {
   margin: 20px auto;
   text-align: left;
   font-size: 0.55em;
-  font-family: monospace;
+  font-family: 'Lato', sans-serif;
   line-height: 1.2em;
   word-wrap: break-word;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3); }
 
 .reveal code {
-  font-family: monospace; }
+  font-family: 'Lato', sans-serif;
+
+  }
+
 
 .reveal pre code {
   display: block;
