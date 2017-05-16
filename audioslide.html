@@ -90,7 +90,7 @@
                 </section> FOTO DE BRONX GENERAL FALTA AQUI-->
 
                  <section data-background-image="assets/images/foto19.JPG">
-                </section>   
+                 </section>   
 
                 <section data-background-image="assets/images/foto15.JPG">
                 </section>   
@@ -181,6 +181,9 @@
 
                 // Inicio haciendo click en el botón comenzar, para darle "Play" al audio. El slide se ejecuta vía Reveal.js, class="navigate-next"
                 $('#button_wrapper').on('click', function() {
+
+                    marcaActual=0;
+                    entrevista.prop('currentTime',0);
                     entrevista.trigger('play');
 
                     // cambiar css de .controles 
