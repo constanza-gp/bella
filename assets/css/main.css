@@ -31,6 +31,7 @@ body {
   margin: 0;  padding: 0;
   -moz-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 /* HEADER */
@@ -187,6 +188,7 @@ color: white;
 .texto {
   padding: 30px 340px 30px 340px;
   font-family: 'Playfair Display', serif;
+  font-weight: 400;
   font-size: 1.1rem;
   color: black;
   line-height: 1.6rem;
@@ -475,6 +477,8 @@ a:hover {
 
    .bajada {
      position: absolute;
+     left: 0;
+     right: 0;
      bottom: 50px;
      font-size: 1rem;
      padding: 0 20px ;
@@ -531,7 +535,7 @@ float: none;
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 970px) {
   .headertop {
-      padding: 60px 60px;
+      padding: 60px;
       font-size: 3rem;
   }
 
@@ -553,9 +557,9 @@ float: none;
   .bajada {
     position: absolute;
     bottom: 10px;
-    font-size: 1.7rem;
-    padding: 0 100px ;
-    margin-top: -40px;
+    font-size: 1.5rem;
+    padding: 0 100px;
+    margin-top: 0;
   }
 
   /*
@@ -582,7 +586,7 @@ float: none;
 
   .texto {
       /* padding: 20px 280px 280px; */
-      padding: 30px 100px 30px 100px;
+      padding: 60px 20% 30px 20%;
   }
   .legend {
     padding: 0px 200px;
@@ -633,8 +637,7 @@ float: none;
    }
 
   .texto {
-   padding: 30px 470px 30px 480px;
-
+   padding: 30px 20% 30px 20%;
   }
 
   .cita1 {
