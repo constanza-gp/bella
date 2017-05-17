@@ -7,7 +7,7 @@
  */
 
 @import url('https://fonts.googleapis.com/css?family=Muli:400,600|Playfair+Display:400,700');
-@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|PT+Sans|Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 .reveal .slide-aligned-left {
@@ -70,7 +70,7 @@ audio {
   width: 175px;
   border-radius: 15px;
   opacity: 0.55;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 200;
   font-size: 20px;
@@ -99,7 +99,7 @@ outline:0;
 
 
 .reveal h1 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 200;
   font-size: 20px;
   color:  #EC7063 ;
@@ -118,7 +118,7 @@ body {
 }
 
 .reveal {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 36px;
   }
@@ -163,7 +163,7 @@ body {
 .reveal h1 {
   font-size: 3em;
   text-shadow: none;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   text-shadow: 4px 4px #000000;
 }
@@ -175,7 +175,7 @@ body {
 }
 
 .intro {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: white; 
   text-shadow: 4px 4px #000000;
@@ -273,13 +273,13 @@ body {
   margin: 20px auto;
   text-align: left;
   font-size: 0.55em;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.2em;
   word-wrap: break-word;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3); }
 
 .reveal code {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
 
   }
 
