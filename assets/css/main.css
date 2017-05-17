@@ -43,6 +43,18 @@ h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   line-height: 5rem;
+} 
+
+.videotitulo {
+  font-size: 5.1rem;
+  padding: 0px 10px 0px 10px;
+  margin-top: 40px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  line-height: 5rem;
+
 }
 
 /*
@@ -78,6 +90,16 @@ section {
  display: block;
  width: 100%; 
  background: url('../images/foto24.JPG');
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center center;
+ background-attachment: fixed; 
+ } 
+
+ .main-video { 
+ display: block;
+ width: 100%; 
+ background: url('../images/foto21.JPG');
  background-size: cover;
  background-repeat: no-repeat;
  background-position: center center;
@@ -317,7 +339,7 @@ margin-bottom: 0;
  display: block;
     width: 960px;
     height: 540px;
-  margin: 50px 150px 30px 150px;
+  margin: 50px 150px 50px 150px;
   padding-top: 60px;
    
 }  
@@ -550,20 +572,17 @@ float: none;
 }  
 
 
-/* menu */ 
+/* menu */  
+
 
 .mainmenu li{
-width: 25%;
-float: left;
+width: 5%;
+float: right;
 color: black;
+
 
 } 
 
-
-.itemleft{ 
-  left: 5px;
-
- }
 
 .mainmenu a {
     padding: 15px 0;
@@ -577,15 +596,6 @@ color: black;
     color: grey;
 } 
 
-.mainline {
-    display: block;
-    width: 30%;
-    margin-top: 35px;
-    height: 3px;
-    background-color: white;
-    float: left;
-
-} 
 
 li a {
     font-size: 1.4rem;
