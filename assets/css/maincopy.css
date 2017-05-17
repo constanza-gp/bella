@@ -19,7 +19,7 @@ html, body {
 } */
 
 @import url('https://fonts.googleapis.com/css?family=Muli:400,600|Playfair+Display:400,700');
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 
@@ -35,17 +35,17 @@ body {
 
 
 h1 {
-  font-size: 4.5em;
+  font-size: 5.1rem;
   padding: 0px 10px 0px 10px;
-  margin-top: 185px;
+  margin-top: 230px;
   text-align: center;
   color: #fff;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  line-height: 1em;
+  font-weight: 700;
+  line-height: 5rem;
 }
 
-
+/*
 a {
   
   text-decoration: none;
@@ -62,7 +62,7 @@ h1:nth-child(1) a {
   animation: neon4 0.5s ease-in-out infinite alternate;
 }   
 
-
+*/ 
 
 
 section {
@@ -89,14 +89,23 @@ section {
 .bajada {
 font-family: 'Roboto', sans-serif;
 /*font-family: 'Playfair Display', serif; */
-font-size: 1.2em;
+font-size: 1.2rem;
 /*margin-bottom: 50px; */
 margin-top: -20px;
 color: white;
 padding: 0px 200px 0px 200px;
 text-align: center;
 
-}
+} 
+
+.byline {  
+ font-style: italic;
+font-family: 'Roboto', sans-serif;
+font-size: 1rem;
+font-weight: 300;
+color: white;
+
+ }
 
 
 /*
@@ -152,9 +161,9 @@ text-align: center;
 .texto {
   padding: 30px 340px 30px 340px;
   font-family: 'Playfair Display', serif;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   color: black;
-  line-height: 1.6em;
+  line-height: 1.6rem;
   
 }  
 
@@ -176,7 +185,7 @@ color: #cf2626;
    font-family: 'Roboto', sans-serif;
    font-size: 2em;
    line-height: 1em;
-   font-weight: 700;
+   font-weight: 400;
    position: relative;
    float: right;
    margin: 0px -200px 0px 30px;  
@@ -252,7 +261,7 @@ font-family: 'Roboto', sans-serif;
 
 .foto-filtro img:hover {
 -webkit-filter: invert(30%);
--webkit-filter: saturate(1.5);
+-webkit-filter: saturate(2.5);
 }  
 
 
@@ -279,10 +288,10 @@ margin: 0px -100px 0px 30px;
 
  .audiotext{ 
 font-family: 'Roboto', sans-serif;
-font-style: italic;
+
 text-align: center;
 font-size: 1em;
-font-weight: 700;
+font-weight: 400;
 margin-bottom: 0;
 
   }
@@ -294,14 +303,26 @@ margin-bottom: 0;
   }
 
 
-
-
 /* BILLETE */ 
 
 .icono {
     text-align: center;
 
-} 
+}  
+
+
+/* VIDEO VIMEO */
+
+.videovimeo iframe {
+ display: block;
+    width: 960px;
+    height: 540px;
+  margin: 50px 150px 30px 150px;
+  padding-top: 60px;
+   
+}  
+
+ 
 
 
 
@@ -338,15 +359,31 @@ border-width: medium;
 margin-bottom: 30px;
 padding-top: 50px;
 padding-bottom: 50px;
-border-color: #1CB200;;
+border-color: #1CB200;
 /*border-color: #87FF14; */
 }  
 
 /* FOOTER */ 
 
-footer{ 
-background-color: white;
-height: 180px; 
+footer{
+    
+   color: black;
+   text-align: center;
+   font-family: 'Roboto', sans-serif;
+   padding: 50px 0;
+
+} 
+
+.nyc{ 
+width: 30%;
+height: auto;
+ } 
+
+ .nyctexto {
+
+  font-size: 1rem;
+line-height: 1.5rem;
+margin: 50px 180px 50px 180px;
 
  }
 
@@ -389,37 +426,61 @@ a:hover {
 
  
 
- /* Mobile  */
+ /* Mobile 
 @media only screen and (min-width : 320px) {
-  .headertop, .texto {
-    padding: 50px 50px;
-  }
-  .legend {
-    padding: 0;
-  }
-  
+ 
 
-  /* h1 {
-    font-size: 1.5em;
+  .headertop{ 
+   top: 0; 
+
+
+   } 
+
+   h1{   
+   padding: 50px 30px;
+    font-size: 2.3em;
+    line-height: 2rem;
     text-align: left;
-  } */ 
+    
+  }
+
+    .bajada{ 
+      font-size: 1em;
+padding: 50px 50px;
+     }
+
+  .texto {
+    padding: 50px 30px 50px 30px;
+  }
+    
 
   .quote-left {
     float: none;
     margin-left: 0;
     margin-right: 0;
+    font-size: 1.5rem;
   }
 
   .cita1 {
     float: none;
     margin-right: 0;
-  }
-}
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding-right: 30px;
+  } 
+
+.audiogram-bella{ 
+float: none;
+
+ }
+
+}  */
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
+@media only screen and (min-width : 970px) {
   .headertop {
-      padding: 60px 60px;
+      padding: 60px 60px; 
+      font-size: 3rem;
   }
   
   .texto {
@@ -448,15 +509,123 @@ a:hover {
 }
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-  .headertop {
-      padding: 50px 50px;
-  }
-  .legend {
-    padding: 100px 350px;
-  }
+@media only screen and (min-width : 1300px) {
+  h1 { 
+    margin-top: 320px;
+    font-size: 8rem;
+    line-height: 7rem;
+    padding: 0px 10px 0px 10px;
+
+  } 
+
+  .bajada {
+   font-size: 1.9rem;
+   padding: 0 300px 0 300px;
+   margin-top: -40px;
+  } 
+
+  .byline { 
+
+    font-size: 1.5rem;
+
+   }
+
+  .texto {
+   padding: 30px 470px 30px 480px;
+
+  } 
+
+  .cita1 {
+    font-size: 3rem;
+    margin-top: -10px;
+    float: right;
+  } 
+
+  .quote-left { 
+  float: left;
+  padding-right: 50px; 
+
+   }
+ 
+}  
+
+
+/* menu */ 
+
+.mainmenu li{
+width: 25%;
+float: left;
+color: black;
+
+} 
+
+
+.itemleft{ 
+  left: 5px;
+
+ }
+
+.mainmenu a {
+    padding: 15px 0;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    
 }
 
+.mainmenu a:hover{
+    color: grey;
+} 
+
+.mainline {
+    display: block;
+    width: 30%;
+    margin-top: 35px;
+    height: 3px;
+    background-color: white;
+    float: left;
+
+} 
+
+li a {
+    font-size: 1.4rem;
+    color: black; */
+
+}
+
+
+
+/* ABOUT PAGE */ 
+
+
+
+.headerabout {
+ margin: 0px 500px 50px 300px;
+ color: black;
+ font-family: font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 7.5rem;
+  text-align: center; 
+
+ }
+
+.about { 
+  color: black; 
+  padding:  0px 300px 10px 50px;
+  font-size: 1.5rem;
+   font-family: 'Playfair Display', serif; 
+
+   
+ }  
+
+ .foto-about{ 
+    width: 70%;
+    height: auto;
+   float: right; 
+   position: relative;
+   padding-left: 1100px;
+   right: 10px;
+  }
   
  
 
@@ -480,7 +649,7 @@ a:hover {
 
 /* TIPO DE FONT PARA LOS TITULOS */ 
 
-@font-face{
+/* @font-face{
 font-family: "Circular";
 font-style: normal;
 font-weight: 200;
@@ -508,7 +677,7 @@ font-weight: 800;
 src:url('fonts/circular-bold.woff2') format('woff2'),
     url('fonts/circular-bold.woff') format('woff');
 }
-
+ */
 
 
 
